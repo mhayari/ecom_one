@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+       <!-- google font -->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- normalize -->
+    <link rel="stylesheet" href="normalize.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.min.css">       
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!-- start fudstuff -->
+    <div class="fudstuff">
+      <div class="container">
+        <div class="logo">
+          <i class="fa-sharp fa-solid fa-cart-shopping first"></i>
+          <a href="">Fudstu<span class="ff">ff</span></a>
+                </div>
+                <div class="location-form">
+                  <div class="location">
+                    <span>Your Locaion</span><br/>
+                    <select name="Location" id="Location">
+                      <option value="Select A Location">Select A Location</option>
+                      <option value="New Delhi">New Delhi</option>
+                      <option value="Mumbai">Mumbai</option>
+                      <option value="Kolkata">Kolkata</option>
+                      <option value="Chennai">Chennai</option>
+                    </select>
+                  </div>
+                  <form class="form-search" action="">
+                    <input type="text" placeholder="Search for products..." title="please fill out this field.">
+                    <button class="search-btn">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                  </form>
+                </div>
+                <div class="heart">
+                  <i class="fa-regular fa-heart"></i>
+                  <span class="cercle">0</span>
+                  <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                  <span class="my-cart">
+                    <span>My Cart</span><br/>
+                    <span>$150.00</span>
+                  </span>
+                  <div class="imag">
+                    <img src="images/about-img.jpg"  alt="" srcset="">
+                    <select disabled name="jhon" id="jhon"><option value="jhon deo">jhon deo</option></select>
+                    <ul class="imag-ul">
+                      <li><a href="login">Login</a></li>
+                      <li><a href="signup">SignUP</a></li>
+                      <li><a href="my account">My Account</a></li>
+                      <li><a href="logout">Logout</a></li>
+                    </ul>
+                  </div>
+                </div>
+      </div>
+    </div>
+    <!-- end fudstuff -->
+  <!-- start navbar -->
+  <div class="navbar">
+    <div class="all-category"></div>
+    <ul class="home-contcat">
+      <li><a href="home">Home</a></li>
+      <li><a href="about us">About Us</a></li>
+      <!--start Blog -->
+      <li><a href="blog">Blog</a>
+        <ul>
+          <!-- Start blog grid -->
+          <li><a href="blog grid">Blog Grid</a>
+            <ul>
+              <li><a href="full width">Full Width</a></li>
+              <li><a href="left sidebar">Left Sidebar</a></li>
+              <li><a href="right sidebar">Right Sidebar</a></li>
+            </ul>
+          </li>
+          <!-- end Blog Grid -->
+          <li><a href="blog detaills">Blog Detaills</a></li>
+        </ul>
+      </li>
+      <!-- End Blog -->
+      <li><a href="pages">Pages <ul></ul></a></li>
+    </ul>
+  </div>
+  <!-- end navbar -->
+    <!-- JavaScript Bundle with Popper -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script> -->
+  </body>
+</html>

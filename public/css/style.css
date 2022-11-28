@@ -1,0 +1,245 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+:root{
+    --identity-color:#05a845;
+    --light-color:white;
+    --darck-color:black;
+    --color-orange:#ff6453;
+    --primary-px:15px
+}
+a{
+    color: var(--darck-color,black);
+    text-decoration: none;
+}
+ul{
+    margin: 10px;
+    list-style: none;
+}
+
+@media (min-width:768px){
+    .container{
+        width:750px;
+    }
+}
+
+@media (min-width:992px){
+    .container{
+        width:970px;
+    }
+}
+
+@media (min-width:1200px){
+    .container{
+        width:1170px;
+    }
+}
+
+.container{
+    padding-left: 5px;
+    padding-right:5px;
+    margin: auto;
+}
+
+.fudstuff{
+    background-color: var(--identity-color,#05a845);
+    padding-top: 20px;
+    padding-bottom: 20px;
+} 
+
+.fudstuff .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.logo{
+    font-weight: 600;
+    font-size: 20px;
+}
+.logo a,.location span{
+    color: var(--light-color,white);
+}
+
+.fa-cart-shopping.first,.ff{
+    color:#ff6453
+}
+.location-form{
+    display:flex;
+    justify-content: space-between;
+    gap:20px;
+}
+@media (max-width:992px){
+    .location-form{
+        order:3;
+        width:100%;
+        margin-top: var(--primary-px);
+    }
+} 
+.location{
+    border: 1px solid var(--light-color,white);
+    border-radius: 5px;
+    padding: 10px;
+}
+@media (max-width:575px){
+    .location{
+        width:100%
+    }
+    .location-form{
+        flex-wrap: wrap;
+    }
+} 
+.location select{
+    background-color: transparent;
+    color: var(--light-color,white);
+    border: none;
+}
+
+.form-search{
+    background-color: var(--light-color,white);
+    padding: 20px;
+    border-radius: 5px;
+    width:650px;
+    display: flex;
+    justify-content:space-between;
+}
+@media (min-width: 1199px){
+.form-search {
+    width: 350px;
+}
+}
+@media (max-width: 1199px){
+.form-search {
+    width: 250px;
+}
+}
+@media (max-width: 991px){
+.form-search {
+    width: 650px;
+}
+}
+.form-search input{
+    border: none;
+}
+.form-search button{
+    background-color: transparent;
+    border: none;
+    color: gray;
+}
+.heart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+
+    /* margin-right: -180px; */
+    /* background-color: white; */
+}
+.fa-heart{
+    color:var(--light-color,white);
+    font-size: 20px;
+    margin-right: var(--primary-px);
+    cursor: pointer
+}
+.fa-heart:hover{
+    color: var(--color-orange);
+}
+
+.fa-cart-shopping{
+    color: var(--light-color,white);
+    cursor: pointer;
+}
+.fa-cart-shopping:hover{
+    color:var(--color-orange)
+}
+.cercle{
+    position: absolute;
+    left:45px;
+    top: 5px;
+    font-size: 11px;
+    padding:3px 5px 3px;
+    border-radius: 50%;
+    background-color: var(--light-color,white);
+    color: gray;
+}
+.my-cart{
+    color: var(--light-color,white);
+    line-height: 20px;
+}
+@media (max-width:768px){
+    .my-cart{
+        display: none;
+    }
+}
+.my-cart:hover{
+    color: var(--color-orange,#ff6453);
+    cursor: pointer;
+}
+.my-cart span:nth-child(3){
+    font-size: 13px;
+}
+.imag{
+    position:absolute;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    position: relative;
+    top: var(--primary-px);
+    padding-bottom: 30px;
+    cursor: pointer;
+}
+.imag:hover .imag-ul{
+    display: block;
+}
+.imag img{
+    width:30px;
+     height:30px;
+     border-radius: 50%;
+}
+@media (max-width:768px){
+    .imag img{
+        display: none;
+    }
+}
+.imag select{
+    background-color:transparent;
+    border: none;
+    color:var(--light-color,white);
+    cursor: pointer;
+}
+.imag select:hover{
+    color: var(--color-orange);
+}
+
+.imag-ul{
+    position: absolute;
+    margin-top: 280px;
+    background-color:var(--identity-color,#05a845);
+    width:199px;
+    display: none;
+}
+.imag-ul li:not(:last-child){
+    border-bottom: 1px solid var(--light-color,white);
+}
+.imag-ul li{
+    padding-top: var(--primary-px);
+    padding-bottom: var(--primary-px);
+}
+.imag-ul li:hover{
+    background-color: var(--light-color,white);
+    transition: .5s;
+}
+
+.imag-ul li a{
+    padding-left: 7px;
+    color: var(--light-color,white);
+}
+.imag-ul li:hover a{
+    color: var(--identity-color,#05a845);
+}
